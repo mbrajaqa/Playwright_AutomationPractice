@@ -45,8 +45,5 @@ test.describe('Practicing getByRole Locator', ()=>{
         expect(await page.locator('#role-locators').getByRole('link', { name: 'Home' }).textContent()).toEqual('Home');
         expect(await page.locator('#role-locators').getByRole('link', { name: 'Products' }).textContent()).toEqual('Products');
         expect(await page.locator('#role-locators').getByRole('link', { name: 'Contact' }).textContent()).toEqual('Contact');
-        
-
     });
-
 });
