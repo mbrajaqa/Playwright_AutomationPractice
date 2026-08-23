@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "generate:allure-report": "npx playwright test --reporter=line, allure-playwright",
+    "generate:allure-results": "npx allure generate ./allure-results",
+    "open:html-allure-report" : "npx allure open ./allure-report"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mbrajaqa/Playwright_AutomationPractice.git"
